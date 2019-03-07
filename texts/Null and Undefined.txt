@@ -1,0 +1,19 @@
+What is null?
+
+null is an empty or non-existent value.
+null must be assigned. 
+
+Example; assign the value of null to a:
+
+let a = null;
+console.log(a)
+
+What is undefined?
+
+Undefined means a variable has been declared, but not defined. 
+
+For example:
+
+let b;
+console.log(b);
+
