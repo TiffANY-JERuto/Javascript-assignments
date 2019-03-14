@@ -1,0 +1,43 @@
+What is the difference between declaration, definition and initialization?
+
+What is Declaration? 
+This is when a variable is registered using a given name within the corresponding scope, (e.g. inside a function).
+ declaration types include let, const and var
+
+For example; (let)
+
+var name = "Tiffany";
+if(name === "Tiffany"){
+  let hello = "Hello Tiffany";
+} else {
+  let hello = "Hi";
+}
+console.log(hello);
+
+
+For example: (var)
+function sayHello(){
+  var hello = "Hello World";
+  return hello;
+}
+console.log(hello);
+
+
+For example: (const)
+
+const x = "Hello World";
+
+
+What is Initialization?
+When you declare a variable it is automatically initialized, which means memory is allocated for the variable by the JavaScript engine.
+
+For example:
+var foo; {Good Morning World}
+
+What is Definition?
+This states that a variable is declared and memory is allocated to the variable. It is also used to define a previously declared name.
+
+For example:
+var foo; { }     
+
+it may be empty but var foo has been given a value/memory and is thus defined.
