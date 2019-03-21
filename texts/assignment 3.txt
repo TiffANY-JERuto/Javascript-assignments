@@ -1,0 +1,33 @@
+var fruits_list = ['mangoes', 'apples', 'oranges', 'watermelons', 'bananas']
+
+undefined
+
+
+var fruits
+
+undefined
+
+
+
+function printfruits(fruits_list){
+fruits_list=['mangoes','apples','oranges', 'watermelons', 'bananas'];}
+
+undefined
+
+
+
+
+fruits_list
+
+(5) ["mangoes", "apples", "oranges", "watermelons", "bananas"]
+
+
+
+console.log(fruits_list);
+VM291:1 
+(5) ["mangoes", "apples", "oranges", "watermelons", "bananas"]
+
+
+fruits_list
+[3]
+"watermelons"
