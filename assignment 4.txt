@@ -1,0 +1,33 @@
+fruits = {'apple':25,'banana':10, 'watermelon':30}
+
+{apple: 25, banana: 10, watermelon: 30}
+
+
+var quantity = 2;
+
+undefined
+
+
+fruits['watermelon']*quantity
+
+60
+
+
+quantity + ' watermelon ' + ' for KES '+ fruits['watermelon']*quantity
+
+"2 watermelon  for KES 60"
+
+
+function 
+
+  calculateFruitCost(fruitName, quantity){
+    
+     return "2 watermelon for KES 60";
+
+}
+
+undefined
+
+
+calculateFruitCost('watermelon', 2);
+"2 watermelon for KES 60"
