@@ -1,0 +1,24 @@
+let user = {
+  name: 'Tiff Cheruto', 
+  years: 18,
+ 
+};
+
+
+let {name, years,isStudent='false'}= user;
+console.log(name, years,isStudent);
+
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+
+ask(
+  "Do you agree?",
+  function() {
+  console.log("You agreed to the execution."); 
+  },
+  function() { 
+  console.log("You cancelled the execution.");
+  }
+);
