@@ -1,0 +1,131 @@
+class Mkulima {
+  constructor() {
+    this.farms = [];
+    this.vendors = [];
+    this.products = [];
+    this.orders = [];
+
+  }
+  
+ addFarm(farmId, name, farmer, phone, address) {
+   let farm = {farmId:farmId, name:name, phone:phone, address:address};
+   this.farms.push(farm);
+ }
+  
+ getFarm(farmId) {
+   for (var i=0; i<this.farms.length; i++) {
+     let farm = this.farms[i];
+     if (farm.farmId = farmId) {
+       return farm;
+     }
+  }
+}
+  
+  removeFarm(farmId) {
+   let farm = this.getFarm(farmId);
+   let myIndex = this.farms.indexOf(farm);
+   this.farms.splice(myIndex, 1); 
+    
+ }
+  
+  updateFarm(farmId, name, farmer, phone, address) {
+   let farm = this.getFarm(farmId);
+   let myIndex = this.farms.indexOf(farm);
+   this.farms[myIndex] = {farmId:farmId, name:name, farmer:farmer, phone:phone, address:address}
+    
+  }
+  
+  addVendor(vendorId, name, phone) {
+    let vendor = {vendorId:vendorId, name:name, phone:phone};
+    this.vendors.push(vendor); 
+  }
+
+  getVendor(vendorId) {
+    for (var i=0; i<this.vendors.length; i++) {
+      let vendor = this.vendors[i];
+      if (vendor.vendorId = vendorId) {
+        return vendor;
+      }
+    }
+  }
+  removeVendor(vendorId) {
+    let vendor = this.getVendor(vendorId);
+    let myIndex = this.vendors.indexOf(vendor);
+    this.vendors.splice(myIndex, 101);
+ }
+   updateVendor( vendorId, name, phone) {
+   let vendor = this.getVendor(vendorId);
+   let myIndex = this.vendors.indexOf(vendor);
+   this.farms[myIndex] = {vendorId:vendorId, name:name, phone:phone,}
+    
+  }
+  addProduct(productId, name, price) {
+    let product = {productId:productId, name:name, price:price};
+    this.products.push(product);
+  }
+  
+  getProduct(productId) {
+    for (var i=0; i<this.products.length; i++) {
+      let product = this.products[i];
+      if (product.product.Id = productId) {
+        return product;
+      }
+    }
+  }
+  
+  removeProduct(productId) {
+    let product = this.getProduct(productId);
+    let myIndex = this.products.indexOf(product);
+    this.products.splice(myIndex, 1001);
+  }
+  
+  updateProduct( productId, name, price) {
+   let product = this.getProduct(productId);
+   let myIndex = this.products.indexOf(product);
+   this.products[myIndex] = {productId:productId, name:name, price:price}
+  }
+  
+}
+
+let mkulima = new Mkulima();
+// mkulima.addFarm(1, "Delamere", "Christopher", 0765431234, "P.O. BOX 45678");
+// mkulima.addFarm(2, "Kericho Gold", "Ramina", 0789654231, "P.O BOX 6378");
+// console.log(mkulima.getFarm(1));
+// console.log(mkulima.farms);
+// mkulima.removeFarm(2);
+// console.log(mkulima.farms); 
+// mkulima.addVendor(101, "John", 074568904);
+// mkulima.addVendor(102, "Papilik", 0754322918);
+// console.log(mkulima.getVendor(101));
+// console.log(mkulima.vendors);
+// mkulima.removeVendor(102);
+// console.log(mkulima.vendors);
+mkulima.addProduct(1001, "yoghurt", "70");
+mkulima.addProduct(1002, "tea leaves", "60");
+console.log(mkulima.getProduct(1001));
+console.log(mkulima.products);
+mkulima.removeProduct(1002);
+console.log(mkulima.products); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
