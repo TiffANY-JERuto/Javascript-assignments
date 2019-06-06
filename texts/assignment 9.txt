@@ -1,0 +1,22 @@
+
+// Background color
+var body = document.body
+body.style.backgroundColor = "silver"
+
+// Adding fruits
+var kiosk = document.createElement("li")
+kiosk.innerHTML = "Guavas"
+var fruits = document.getElementById("fruList")
+fruits.appendChild(kiosk)
+
+// Adding vegetables
+var veges = document.createElement("li")
+veges.innerHTML = "Potatoes"
+var vegetables = document.getElementById("vegList")
+vegetables.appendChild(veges)
+
+// h1
+var heading=document.getElementById("heading")
+heading.style.color="green"
+
+// h3
